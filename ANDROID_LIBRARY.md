@@ -9,3 +9,4 @@
 
 ###UI Components
 * Android Bootstrap: https://github.com/Bearded-Hen/Android-Bootstrap
+* Iconify: https://github.com/JoanZapata/android-iconify
