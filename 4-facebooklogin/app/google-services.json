@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "587947031846",
+    "firebase_url": "https://bekup2-facebooklogin.firebaseio.com",
+    "project_id": "bekup2-facebooklogin",
+    "storage_bucket": "bekup2-facebooklogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587947031846:android:26328f61e9194da5",
+        "android_client_info": {
+          "package_name": "com.bekup.facebooklogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587947031846-sk678cr7ca75u340aht2frah5t3sjun0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8gTduF7kSTuj_-dINp8cizaBvo4RQfYg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
