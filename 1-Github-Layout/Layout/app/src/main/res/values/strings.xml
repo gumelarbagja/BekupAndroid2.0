@@ -21,4 +21,5 @@ Maecenas auctor pharetra dolor, nec condimentum neque vulputate vel. Donec massa
 Nullam imperdiet, mi eu sagittis efficitur, sapien mauris faucibus lectus, varius hendrerit ante nisl quis quam. Vestibulum velit est, viverra sed fermentum elementum, egestas nec justo. Nulla facilisi. Donec tempus elit aliquam dui vestibulum, quis consequat sem elementum. Sed id libero varius, venenatis eros at, ornare mi. Ut ac enim tortor. Integer rutrum velit sed lectus tempor tincidunt. In sapien purus, ultricies eu velit condimentum, venenatis tempor leo. Vestibulum eget semper est.
 
 Maecenas scelerisque nec velit eget accumsan. Fusce turpis nibh, placerat sed sem non, egestas ultricies nisi. Mauris in mi ut augue sagittis pulvinar. Quisque urna ipsum, pretium.</string>
+    <string name="button_label">Button</string>
 </resources>
