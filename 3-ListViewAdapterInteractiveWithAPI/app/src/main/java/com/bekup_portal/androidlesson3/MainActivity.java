@@ -15,8 +15,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button btnListView = (Button) findViewById(R.id.btnMenuListView);
         Button btnRecyclerView = (Button) findViewById(R.id.btnMenuRecycler);
+        Button btnSampleGetAPI = (Button) findViewById(R.id.btnSampleGetAPI);
         btnListView.setOnClickListener(this);
         btnRecyclerView.setOnClickListener(this);
+        btnSampleGetAPI.setOnClickListener(this);
 
     }
 
@@ -30,6 +32,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnMenuRecycler:
                 intent = new Intent(this, RecyclerViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btnSampleGetAPI:
+                intent = new Intent(this, GetObjectActivity.class);
                 startActivity(intent);
                 break;
             default:
