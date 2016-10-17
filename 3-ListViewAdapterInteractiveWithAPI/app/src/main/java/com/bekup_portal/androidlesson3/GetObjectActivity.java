@@ -43,7 +43,7 @@ public class GetObjectActivity extends AppCompatActivity {
         call.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
-                progressDialog.show();
+                progressDialog.dismiss();
                 User user = response.body();
 
                 if (user != null) {
@@ -58,7 +58,7 @@ public class GetObjectActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<User> call, Throwable t) {
-                progressDialog.show();
+                progressDialog.dismiss();
                 Toast.makeText(GetObjectActivity.this, t.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
