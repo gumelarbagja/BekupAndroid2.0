@@ -14,14 +14,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         Button btnListView = (Button) findViewById(R.id.btnMenuListView);
+        Button btnRecyclerView = (Button) findViewById(R.id.btnMenuRecycler);
         btnListView.setOnClickListener(this);
+        btnRecyclerView.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View v) {
+        Intent intent;
         switch (v.getId()) {
             case R.id.btnMenuListView:
-                Intent intent = new Intent(this, ListViewActivity.class);
+                intent = new Intent(this, ListViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btnMenuRecycler:
+                intent = new Intent(this, RecyclerViewActivity.class);
                 startActivity(intent);
                 break;
             default:
