@@ -7,7 +7,7 @@ public class Followers {
      * id : 235584
      * avatar_url : https://avatars.githubusercontent.com/u/235584?v=3
      * gravatar_id :
-     * url : https://api.github.com/users/mhaidarh
+     * organization : https://api.github.com/users/mhaidarh
      * html_url : https://github.com/mhaidarh
      * followers_url : https://api.github.com/users/mhaidarh/followers
      * following_url : https://api.github.com/users/mhaidarh/following{/other_user}

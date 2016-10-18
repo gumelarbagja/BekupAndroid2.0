@@ -7,7 +7,7 @@ public class User {
      * id : 3787041
      * avatar_url : https://avatars.githubusercontent.com/u/3787041?v=3
      * gravatar_id :
-     * url : https://api.github.com/users/derohimat
+     * organization : https://api.github.com/users/derohimat
      * html_url : https://github.com/derohimat
      * followers_url : https://api.github.com/users/derohimat/followers
      * following_url : https://api.github.com/users/derohimat/following{/other_user}
