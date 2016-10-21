@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tabs Swipe</string>
+
+    <string name="btn_simple_tabs">Simple Tabs</string>
+    <string name="btn_scrollable_tabs">Scrollable Tabs</string>
+    <string name="btn_icon_text_tabs">Icon &amp; Text Tabs</string>
+    <string name="btn_icon_tabs">Only Icon Tabs</string>
+    <string name="btn_pinned_top_tabs">Pinned To Top Tabs</string>
+    <string name="btn_custom_icon_tabs">Custom View Icon &amp; Text</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
