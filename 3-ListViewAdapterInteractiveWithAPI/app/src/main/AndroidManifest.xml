@@ -17,10 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ListViewActivity"/>
+        <activity android:name=".ListViewActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".RecyclerViewActivity"/>
         <activity android:name=".GetObjectActivity"/>
         <activity android:name=".GetListObjectActivity"/>
+        <activity android:name=".GetDataActivity"/>
     </application>
 
 </manifest>

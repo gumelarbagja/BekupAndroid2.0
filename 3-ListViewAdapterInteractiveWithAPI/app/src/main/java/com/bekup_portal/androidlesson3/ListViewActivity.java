@@ -1,5 +1,6 @@
 package com.bekup_portal.androidlesson3;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,7 +11,7 @@ import android.widget.Toast;
 
 public class ListViewActivity extends AppCompatActivity {
 
-    private String[] mData = {"bandung", "medan", "tangerang", "malang", "makassar"};
+    private String[] mData = {"bandung", "medan", "tangerang", "malang", "makassar", "jakarta"};
     private ArrayAdapter<String> mArrayAdapter;
 
     @Override
@@ -26,6 +27,10 @@ public class ListViewActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(ListViewActivity.this, GetDataActivity.class);
+                intent.putExtra(GetDataActivity.ARG_TITLE, mData[position]);
+                startActivity(intent);
+
                 Toast.makeText(ListViewActivity.this, mData[position] + " clicked", Toast.LENGTH_LONG).show();
             }
         });

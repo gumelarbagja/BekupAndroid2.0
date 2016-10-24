@@ -1,5 +1,6 @@
 package com.bekup_portal.androidlesson3;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -41,6 +42,11 @@ public class RecyclerViewActivity extends AppCompatActivity {
             public void onClick(View view, int position) {
                 Movie movie = movieList.get(position);
                 Toast.makeText(getApplicationContext(), movie.getTitle() + " is selected!", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(RecyclerViewActivity.this, GetDataActivity.class);
+                //intent.putExtra(GetDataActivity.ARG_TITLE, movie.getTitle());
+                intent.putExtra(GetDataActivity.ARG_OBJECT, movie);
+                startActivity(intent);
             }
 
             @Override
