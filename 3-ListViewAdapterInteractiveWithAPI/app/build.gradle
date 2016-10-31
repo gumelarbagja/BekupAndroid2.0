@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+// Put Fabric plugin after Android plugin
+apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 25
@@ -26,6 +28,7 @@ android {
 }
 
 repositories {
+    maven { url 'https://maven.fabric.io/public' }
     mavenCentral() // jcenter() works as well because it pulls from Maven Central
 }
 
@@ -48,4 +51,9 @@ dependencies {
 
     //Image Loader
     compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    //Crashlytics
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+        transitive = true;
+    }
 }

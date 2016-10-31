@@ -16,10 +16,31 @@
 #   public *;
 #}
 
+#Support library
+-dontwarn android.support.v7.**
+-keep class android.support.v7.** { *; }
+-keep interface android.support.v7.** { *; }
+
+# Retrofit 2.X
+## https://square.github.io/retrofit/ ##
+-dontwarn okio.**
+-dontwarn retrofit2.Platform$Java8
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keepattributes Signature
+-keepattributes Exceptions
+
+-keepclasseswithmembers class * {
+    @retrofit2.http.* <methods>;
+}
+
+#Crashlytics
+-keep class com.crashlytics.** { *; }
+-dontwarn com.crashlytics.**
+
 #Glide
 -keep public class * implements com.bumptech.glide.module.GlideModule
 -keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
   **[] $VALUES;
   public *;
 }
--keepresourcexmlelements manifest/application/meta-data@value=GlideModule
